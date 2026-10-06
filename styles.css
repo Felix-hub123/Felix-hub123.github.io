@@ -694,3 +694,289 @@ footer { background:#040b13; color:#7f93a8; padding:24px 0; font-size:12px; }
         font-size: 24px;
     }
 }
+
+
+/* ============================================================
+   CORREÇÃO FINAL — HERO MOBILE
+   Colar no FINAL do styles.css
+============================================================ */
+
+@media (max-width: 940px) {
+
+    .hero {
+        min-height: auto;
+        padding-top: 120px;
+        padding-bottom: 70px;
+    }
+
+    .hero-grid {
+        display: grid;
+        /* IMPORTANTE:
+           no mobile fica apenas UMA coluna */
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .hero-copy {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+        .hero-copy h1 {
+            max-width: 760px;
+        }
+
+    .hero-text {
+        max-width: 720px;
+    }
+
+    .hero-visual {
+        width: 100%;
+        max-width: 700px;
+        min-height: 500px;
+        margin: 0 auto;
+    }
+
+    .flight-panel {
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+}
+
+
+/* ============================================================
+   TELEMÓVEIS
+============================================================ */
+
+@media (max-width: 720px) {
+
+    .hero {
+        padding-top: 115px;
+        padding-bottom: 55px;
+    }
+
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+
+    /*
+       Título muito mais equilibrado no telemóvel.
+    */
+
+    .hero h1 {
+        max-width: 100%;
+        margin-bottom: 22px;
+        font-size: clamp( 38px, 11vw, 52px );
+        line-height: 1.07;
+        letter-spacing: -.045em;
+        text-wrap: pretty;
+    }
+
+
+    .hero-text {
+        width: 100%;
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+
+    /*
+       Botões ocupam a largura disponível.
+    */
+
+    .hero-actions {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat( 2, minmax(0, 1fr) );
+        gap: 12px;
+    }
+
+
+        .hero-actions .btn {
+            width: 100%;
+        }
+
+
+    /*
+       Tecnologias abaixo dos botões.
+    */
+
+    .hero-meta {
+        grid-template-columns: repeat( 2, 1fr );
+        gap: 20px;
+        margin-top: 35px;
+    }
+
+
+    /*
+       Cartão LisAeroGest passa para BAIXO
+       do texto em vez de ficar ao lado.
+    */
+
+    .hero-visual {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        margin: 10px auto 0;
+        padding: 30px 0;
+    }
+
+
+    .flight-panel {
+        position: relative;
+        inset: auto;
+        width: 100%;
+        margin: 0;
+        padding: 24px;
+        border-radius: 24px;
+    }
+
+
+    /*
+       Remove elementos flutuantes no telemóvel.
+    */
+
+    .floating-card {
+        display: none;
+    }
+
+
+    /*
+       Radar fica apenas como decoração
+       e não provoca overflow.
+    */
+
+    .radar-one {
+        width: 360px;
+        height: 360px;
+        right: -170px;
+        top: -40px;
+    }
+
+
+    .radar-two {
+        width: 240px;
+        height: 240px;
+        right: -80px;
+        top: 20px;
+    }
+
+
+    /*
+       Rota Lisboa -> API
+    */
+
+    .route-line {
+        grid-template-columns: auto minmax(80px, 1fr) auto;
+        gap: 14px;
+        margin: 40px 0 35px;
+    }
+
+
+        .route-line strong {
+            font-size: 30px;
+        }
+
+
+    .route-track span {
+        width: 42px;
+        height: 42px;
+        font-size: 19px;
+    }
+
+
+    /*
+       Mantém os cartões internos em 2 colunas.
+    */
+
+    .mini-grid {
+        grid-template-columns: repeat( 2, minmax(0, 1fr) );
+        gap: 10px;
+    }
+
+
+        .mini-grid article {
+            padding: 15px;
+        }
+}
+
+
+/* ============================================================
+   TELEMÓVEIS PEQUENOS
+============================================================ */
+
+@media (max-width: 480px) {
+
+    .hero {
+        padding-top: 105px;
+    }
+
+
+        .hero h1 {
+            font-size: clamp( 36px, 10.5vw, 46px );
+            line-height: 1.08;
+        }
+
+
+    .hero-text {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /*
+       Botões um por linha em ecrãs pequenos.
+    */
+
+    .hero-actions {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero-meta {
+        grid-template-columns: repeat( 2, 1fr );
+    }
+
+
+    .flight-panel {
+        padding: 21px 18px;
+    }
+
+
+    .panel-top h3 {
+        font-size: 23px;
+    }
+
+
+    .status {
+        font-size: 10px;
+        padding: 6px 9px;
+    }
+
+
+    .route-line {
+        gap: 10px;
+    }
+
+
+        .route-line strong {
+            font-size: 27px;
+        }
+
+
+        .route-line span {
+            font-size: 10px;
+        }
+
+
+    .mini-grid {
+        grid-template-columns: 1fr;
+    }
+}
