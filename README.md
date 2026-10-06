@@ -1,6 +1,6 @@
 # Portefólio — Félix Franco Clemente
 
-Portefólio profissional de **Félix Franco Clemente**, Junior .NET / Backend Developer.
+Portefólio profissional de **Félix Franco Clemente**, Trainee .NET / Backend Developer.
 
 Este site apresenta o projeto **LisAeroGest**, uma solução de gestão aeroportuária composta por:
 
