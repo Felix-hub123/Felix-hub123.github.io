@@ -1,24 +1,83 @@
 # Portefólio — Félix Franco Clemente
 
-Portefólio estático focado no projeto LisAeroGest.
+Portefólio profissional de **Félix Franco Clemente**, Junior .NET / Backend Developer.
 
-## Estrutura
+Este site apresenta o projeto **LisAeroGest**, uma solução de gestão aeroportuária composta por:
 
-- `index.html` — página principal
-- `styles.css` — estilos responsivos
-- `script.js` — menu mobile e animações
-- `assets/screenshots/` — colocar screenshots reais do LisAeroGest
+- aplicação Web em ASP.NET Core MVC
+- REST API com JWT
+- aplicação Mobile em .NET MAUI
+- Entity Framework Core
+- PostgreSQL
+- Docker
+- deployment em Render
 
-## Personalização necessária
+## 🌐 Portefólio online
 
-No `index.html`, substituir:
+Aceder ao portefólio:
 
-- `SEU_EMAIL_AQUI`
-- link `#` do LinkedIn
-- link do GitHub do LisAeroGest, se quiser apontar diretamente para o repositório
+https://felix-hub123.github.io
 
-## Executar
+## ✈️ Projeto em destaque
 
-Basta abrir `index.html` no browser.
+### LisAeroGest
 
-Para publicação gratuita, este site funciona diretamente no GitHub Pages, Netlify ou Cloudflare Pages.
+O LisAeroGest é uma plataforma de gestão aeroportuária desenvolvida com .NET 8.
+
+Principais funcionalidades:
+
+- gestão de voos
+- gestão de passageiros
+- bilhética
+- check-in
+- autenticação e autorização por roles
+- API REST
+- aplicação Mobile
+- integração com serviços externos
+- base de dados relacional
+- containerização com Docker
+- deployment em ambiente de produção
+
+Aplicação:
+
+https://lisaerogest.onrender.com
+
+## 🛠️ Tecnologias
+
+- C#
+- .NET 8
+- ASP.NET Core MVC
+- ASP.NET Core Web API
+- Entity Framework Core
+- SQL Server
+- PostgreSQL
+- ASP.NET Identity
+- JWT
+- Docker
+- .NET MAUI
+- HTML
+- CSS
+- JavaScript
+- Git
+- GitHub
+
+## 📁 Estrutura
+
+```text
+felix-portfolio-lisaerogest/
+│
+├── index.html
+├── styles.css
+├── script.js
+│
+├── assets/
+│   └── screenshots/
+│       ├── home.png
+│       ├── admin-dashboard.png
+│       ├── voos.png
+│       ├── checkin.png
+│       ├── passageiro.png
+│       ├── mobile-home.png
+│       └── mobile-flight.png
+│
+└── README.md
